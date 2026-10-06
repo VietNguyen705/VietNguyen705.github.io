@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Viet K. Nguyen</title>
+<meta name="description" content="Viet K. Nguyen, security of AI agents and autonomous robots. M.S. Cal Poly Pomona.">
+<meta property="og:title" content="Viet K. Nguyen">
+<meta property="og:description" content="Security of AI agents and autonomous robots. Applying to PhD programs for Fall 2027.">
+<meta property="og:image" content="https://vietnguyen705.github.io/img/me.jpg">
+<meta property="og:url" content="https://vietnguyen705.github.io/">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+body { margin: 0; background: #fff; color: #222; font: 15px/1.6 Lato, Verdana, Helvetica, sans-serif; }
+a { color: #1772d0; text-decoration: none; }
+a:hover { color: #f09228; }
+.wrap { max-width: 860px; margin: 0 auto; padding: 32px 20px 48px; }
+h1 { font-size: 32px; font-weight: 400; text-align: center; margin: 8px 0 18px; }
+h2 { font-size: 22px; font-weight: 400; margin: 40px 0 12px; }
+h3 { font-size: 15px; font-weight: 700; color: #666; margin: 28px 0 0; border-bottom: 1px solid #eee; padding-bottom: 4px; }
+.intro { display: flex; gap: 32px; align-items: center; }
+.intro .text { flex: 1; }
+.intro img { width: 200px; border-radius: 50%; }
+.contact { text-align: center; margin-top: 16px; }
+.news { padding-left: 20px; margin: 0; }
+.news li { margin-bottom: 4px; }
+.paper { display: flex; gap: 24px; padding: 16px 0; align-items: flex-start; }
+.paper .fig { flex: 0 0 200px; }
+.paper .fig img { width: 200px; height: 140px; object-fit: contain; display: block; border: 1px solid #e6e6e6; background: #fff; }
+.paper .info { flex: 1; }
+.paper .title { font-weight: 700; }
+.paper.hl { background: #fffbe8; margin: 0 -12px; padding: 16px 12px; }
+.me { font-weight: 700; }
+.small { font-size: 13px; color: #666; }
+ul.plain { padding-left: 20px; margin: 0; }
+ul.plain li { margin-bottom: 6px; }
+footer { margin-top: 48px; text-align: right; font-size: 12px; color: #999; }
+@media (max-width: 640px) {
+  .intro { flex-direction: column-reverse; gap: 12px; }
+  .intro img { width: 150px; }
+  .paper { flex-direction: column; gap: 10px; }
+  .paper .fig, .paper .fig img { width: 100%; max-width: 360px; flex-basis: auto; }
+  .paper .fig img { height: auto; max-height: 240px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="intro">
+  <div class="text">
+    <h1>Viet K. Nguyen</h1>
+    <p>I work on the security of AI agents and autonomous robots. I'm interested in how attacks get into these systems, how far they spread, and how to catch them. Most of my experiments run on real models and real hardware, including multi-agent LLM apps, small self-driving cars, a Unitree G1 humanoid, and a Boston Dynamics Spot.</p>
+    <p>I did my M.S. (Aug 2026) and B.S. (2024) in Computer Science at <a href="https://www.cpp.edu/">Cal Poly Pomona</a>, where I worked with <a href="https://www.cpp.edu/faculty/mihusain/">Mohammad Husain</a> in the PolySec Cyber Lab. Our robot security work was funded by the Air Force Research Laboratory. Right now I'm co-founding Sanctura AI with Dr. Husain, building an offline AI assistant for organizations that can't send their data to cloud models.</p>
+    <p><b>I'm applying to PhD programs for Fall 2027.</b></p>
+    <p class="contact">
+      <a href="mailto:vietknguyen75@gmail.com">Email</a> &nbsp;/&nbsp;
+      <a href="cv.pdf">CV</a> &nbsp;/&nbsp;
+      <a href="https://scholar.google.com/citations?user=XI0XC4wAAAAJ">Scholar</a> &nbsp;/&nbsp;
+      <a href="https://github.com/VietNguyen705">GitHub</a> &nbsp;/&nbsp;
+      <a href="https://linkedin.com/in/viet-nguyen705/">LinkedIn</a>
+    </p>
+  </div>
+  <img src="img/me.jpg" alt="Photo of Viet K. Nguyen">
+</div>
+
+<h2>News</h2>
+<ul class="news">
+  <li><b>Oct 2026</b>: Code and traces for our CNS paper are now public <a href="https://github.com/VietNguyen705/agentic-ai-pentest">on GitHub</a>.</li>
+  <li><b>Sep 2026</b>: Presented two papers at IEEE CNS 2026 in Newark, DE (main conference and the CPS-Sec workshop).</li>
+  <li><b>Sep 2026</b>: MMPIBench preprint is out on <a href="https://arxiv.org/abs/2609.09404">arXiv</a>.</li>
+  <li><b>Aug 2026</b>: Finished my M.S. at Cal Poly Pomona.</li>
+  <li><b>Feb 2026</b>: Our wavelet IoT fingerprinting paper was published in <i>Electronics</i>.</li>
+  <li><b>Oct 2025</b>: Poster on self-driving car attacks at SCAIR.</li>
+</ul>
+
+<h2>Research</h2>
+
+<h3>AI agents</h3>
+<div class="paper hl">
+  <div class="fig"><img src="img/cns.png" alt="Seven-agent university assistant used as the test system"></div>
+  <div class="info">
+    <a href="https://arxiv.org/abs/2512.14860" class="title">Penetration Testing of Agentic AI: A Longitudinal Security Analysis Across Models and Frameworks</a><br>
+    <span class="me">Viet K. Nguyen</span>, Mohammad I. Husain<br>
+    <i>IEEE CNS</i>, 2026<br>
+    <a href="https://arxiv.org/abs/2512.14860">arXiv</a> / <a href="https://github.com/VietNguyen705/agentic-ai-pentest">code + traces</a>
+    <p>We attacked a seven-agent system on AutoGen and CrewAI with 13 attacks, first on 2025 models and again on their 2026 successors. The framework mattered about as much as the model. We also found agents that fake a successful result instead of refusing.</p>
+  </div>
+</div>
+
+<div class="paper">
+  <div class="fig"><img src="img/mmpi.png" alt="MMPIBench setup: attack types, frameworks and models"></div>
+  <div class="info">
+    <a href="https://arxiv.org/abs/2609.09404" class="title">An Experimental Evaluation of Multimodal Prompt Injection Attacks on Agentic AI Frameworks</a><br>
+    <span class="me">Viet K. Nguyen</span>, Mohammad I. Husain<br>
+    arXiv, 2026 <span class="small">(under review)</span><br>
+    <a href="https://arxiv.org/abs/2609.09404">arXiv</a>
+    <p>Attacks hidden in images (text, overlays, EXIF, QR codes, fake screenshots), tracked from what the agent sees to what it actually does. Over 720 runs, the model mattered far more than the framework.</p>
+  </div>
+</div>
+
+<div class="paper">
+  <div class="fig"><img src="img/ati.png" alt="Agent Trust Infrastructure architecture"></div>
+  <div class="info">
+    <span class="title">Agent Trust Infrastructure (ATI): A Federated Identity, Trust, Attestation, and Accountability Architecture for Cross-Vendor Autonomous AI Agents</span><br>
+    <span class="me">Viet K. Nguyen</span>, Mohammad I. Husain<br>
+    <span class="small">In preparation, arXiv soon</span>
+    <p>Each organization runs its own certificate authority for its agents, and every tool call is checked before it runs. In simulation it stopped 84% of attacks, up from 43%, without hurting normal tasks.</p>
+  </div>
+</div>
+
+<h3>Robots and autonomous vehicles</h3>
+<div class="paper hl">
+  <div class="fig"><img src="img/sok.png" alt="12-layer cross-platform architecture"></div>
+  <div class="info">
+    <span class="title">SoK: A Unified Architectural Framework of Cyber Attacks on Autonomous Cyber-Physical AI Systems</span><br>
+    <span class="me">Viet K. Nguyen</span>, Kai C. Xue, Nathan Lee, Mohammad I. Husain<br>
+    <i>IEEE CPS-Sec Workshop</i>, at IEEE CNS 2026
+    <p>One 12-layer model that fits cars, drones, humanoids, quadrupeds, ground robots and robot vacuums, so attacks on different platforms can be compared side by side.</p>
+  </div>
+</div>
+
+<div class="paper">
+  <div class="fig"><img src="img/car.png" alt="Camera frames from the self-driving car under different attacks"></div>
+  <div class="info">
+    <a href="https://arxiv.org/abs/2603.14124" class="title">Experimental Evaluation of Security Attacks on Self-Driving Car Platforms</a><br>
+    <span class="me">Viet K. Nguyen</span>, Nathan Lee, Mohammad Husain<br>
+    arXiv, 2026 <span class="small">(accepted as a short paper at SECRYPT 2026; withdrawn because I couldn't travel)</span><br>
+    <a href="https://arxiv.org/abs/2603.14124">arXiv</a>
+    <p>Five attacks on two small self-driving cars over 150+ trials. Each attack leaves its own pattern in steering, compute time and frame rate, so you can tell which one is happening.</p>
+  </div>
+</div>
+
+<h3>Machine learning for network security</h3>
+<div class="paper">
+  <div class="fig"><img src="img/wav.png" alt="IoT devices fingerprinted through a router"></div>
+  <div class="info">
+    <a href="https://doi.org/10.3390/electronics15040786" class="title">Wavelet-Based IoT Device Fingerprinting</a><br>
+    Abdelfattah Amamra, <span class="me">Viet K. Nguyen</span>, Adam Cheung, Sarah Acosta, Thuy Linh Pham<br>
+    <i>Electronics</i>, 15(4):786, 2026<br>
+    <a href="https://doi.org/10.3390/electronics15040786">paper</a>
+    <p>Identifying IoT devices from their traffic. 99% accuracy across 28 to 105 devices, and 71% even during a DDoS attack.</p>
+  </div>
+</div>
+
+<div class="paper">
+  <div class="fig"><img src="img/fno.png" alt="FNO keeps its accuracy across sampling rates while CNN and LSTM collapse"></div>
+  <div class="info">
+    <span class="title">Fourier Neural Operator-Based IoT Device Fingerprinting</span><br>
+    Abdelfattah Amamra, <span class="me">Viet K. Nguyen</span>, Adam Cheung, Sarah Acosta, Thuy Linh Pham<br>
+    <span class="small">In preparation</span>
+    <p>A federated version that keeps working when clients see traffic at very different resolutions (0.94 accuracy, where a CNN drops to 0.67).</p>
+  </div>
+</div>
+
+<h2>Other projects</h2>
+<ul class="plain">
+  <li><b>Unitree G1 teleoperation security.</b> I tested the humanoid's VR teleoperation setup on my own and found that the control link and the robot's internal network both accept unauthenticated clients. Findings went to the vendor; a technical report will follow.</li>
+  <li><b>Boston Dynamics Spot.</b> Found a denial-of-service flaw (CVSS 7.5) that knocks the robot offline.</li>
+  <li><b>CyberGym judge agent</b> for Berkeley RDI's AgentX&ndash;AgentBeats competition. It scores how well AI agents find the root cause of real CVEs and write a working proof of concept. <a href="https://github.com/VietNguyen705/agentbeats-polysec">code</a></li>
+</ul>
+
+<h2>Talks</h2>
+<ul class="plain">
+  <li>Penetration Testing of Agentic AI. IEEE CNS, Newark, DE, Sep 2026.</li>
+  <li>SoK: A Unified Architectural Framework of Cyber Attacks on Autonomous Cyber-Physical AI Systems. CPS-Sec at IEEE CNS, Sep 2026.</li>
+  <li>Experimental Evaluation of Security Attacks on Self-Driving Cars. Poster, SoCal AI and Robotics Symposium (SCAIR), Oct 2025.</li>
+  <li>Wavelet-Based IoT Device Fingerprinting. Poster, CPP Cybersecurity Awareness Fair, Oct 2025 (2nd of 30).</li>
+</ul>
+
+<h2>Mentoring</h2>
+<p>Summer 2026: I made nine research projects for high school students in Cal Poly Pomona's summer program and ran office hours every Friday. The notebooks are on GitHub, for example <a href="https://github.com/VietNguyen705/self-driving-hs">self-driving cars</a>, <a href="https://github.com/VietNguyen705/website-trust-prediction-hs">website trust</a>, <a href="https://github.com/VietNguyen705/dementia-mri-highschool">dementia MRI</a> and <a href="https://github.com/VietNguyen705/plant-disease-highschool">plant disease</a>. I also supervised two student researchers on the federated FNO project.</p>
+
+<footer>Last updated Oct 2026</footer>
+</div>
+</body>
+</html>
