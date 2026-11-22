@@ -51,7 +51,7 @@ footer { margin-top: 48px; text-align: right; font-size: 12px; color: #999; }
   <div class="text">
     <h1>Viet K. Nguyen</h1>
     <p>I work on the security of AI agents and autonomous robots. I'm interested in how attacks get into these systems, how far they spread, and how to catch them. Most of my experiments run on real models and real hardware, including multi-agent LLM apps, small self-driving cars, a Unitree G1 humanoid, and a Boston Dynamics Spot.</p>
-    <p>I did my M.S. (Aug 2026) and B.S. (2024) in Computer Science at <a href="https://www.cpp.edu/">Cal Poly Pomona</a>, where I worked with <a href="https://www.cpp.edu/faculty/mihusain/">Mohammad Husain</a> in the PolySec Cyber Lab. Our robot security work was funded by the Air Force Research Laboratory.</p>
+    <p>I did my M.S. (Aug 2026) and B.S. (2024) in Computer Science at <a href="https://www.cpp.edu/">Cal Poly Pomona</a>, where I worked with <a href="https://www.cpp.edu/faculty/mihusain/">Mohammad Husain</a> in the PolySec Cyber Lab. Our robot security work was part of an externally funded research project.</p>
     <p><b>I'm applying to PhD programs for Fall 2027.</b></p>
     <p class="contact">
       <a href="mailto:vietknguyen75@gmail.com">Email</a> &nbsp;/&nbsp;
@@ -66,6 +66,7 @@ footer { margin-top: 48px; text-align: right; font-size: 12px; color: #999; }
 
 <h2>News</h2>
 <ul class="news">
+  <li><b>Nov 2026</b>: Two new preprints on arXiv: <a href="https://arxiv.org/abs/2611.23202">Agent Trust Infrastructure</a> and <a href="https://arxiv.org/abs/2611.21590">the Provenance-Privacy Paradox</a> in Apple's Private Cloud Compute.</li>
   <li><b>Oct 2026</b>: MMPIBench was accepted at the AIDC workshop at ACSAC 2026.</li>
   <li><b>Oct 2026</b>: Code and traces for our CNS paper are now public <a href="https://github.com/VietNguyen705/agentic-ai-pentest">on GitHub</a>.</li>
   <li><b>Sep 2026</b>: Presented two papers at IEEE CNS 2026 in Newark, DE (main conference and the CPS-Sec workshop).</li>
@@ -103,10 +104,22 @@ footer { margin-top: 48px; text-align: right; font-size: 12px; color: #999; }
 <div class="paper">
   <div class="fig"><img src="img/ati.png" alt="Agent Trust Infrastructure architecture"></div>
   <div class="info">
-    <span class="title">Agent Trust Infrastructure (ATI): A Federated Identity, Trust, Attestation, and Accountability Architecture for Cross-Vendor Autonomous AI Agents</span><br>
+    <a href="https://arxiv.org/abs/2611.23202" class="title">Agent Trust Infrastructure (ATI): A Federated Identity, Trust, Attestation, and Accountability Architecture for Cross-Organization Autonomous AI Agents</a><br>
     <span class="me">Viet K. Nguyen</span>, Mohammad I. Husain<br>
-    <span class="small">In preparation, arXiv soon</span>
+    arXiv, 2026<br>
+    <a href="https://arxiv.org/abs/2611.23202">arXiv</a>
     <p>Each organization runs its own certificate authority for its agents, and every tool call is checked before it runs. In simulation it stopped 84% of attacks, up from 43%, without hurting normal tasks.</p>
+  </div>
+</div>
+
+<div class="paper">
+  <div class="fig"><img src="img/pcc.png" alt="Workflow of the Apple Reference Image provenance pipeline"></div>
+  <div class="info">
+    <a href="https://arxiv.org/abs/2611.21590" class="title">The Provenance-Privacy Paradox: Can Private Cloud Compute (PCC) Prove That Apple Reference Images Are Not Used for Learning?</a><br>
+    Mohammad I. Husain, <span class="me">Viet K. Nguyen</span><br>
+    arXiv, 2026<br>
+    <a href="https://arxiv.org/abs/2611.21590">arXiv</a>
+    <p>Apple's photo provenance pipeline has its cloud service see the raw pixels. In our testbed, a workload that secretly learned from photos passed the same checks and returned identical JPEGs as a normal one, so attestation alone can't show the photos aren't used for learning.</p>
   </div>
 </div>
 
@@ -126,7 +139,7 @@ footer { margin-top: 48px; text-align: right; font-size: 12px; color: #999; }
   <div class="info">
     <a href="https://arxiv.org/abs/2603.14124" class="title">Experimental Evaluation of Security Attacks on Self-Driving Car Platforms</a><br>
     <span class="me">Viet K. Nguyen</span>, Nathan Lee, Mohammad Husain<br>
-    arXiv, 2026 <span class="small">(accepted as a short paper at SECRYPT 2026; withdrawn because I couldn't travel)</span><br>
+    arXiv, 2026<br>
     <a href="https://arxiv.org/abs/2603.14124">arXiv</a>
     <p>Five attacks on two small self-driving cars over 150+ trials. Each attack leaves its own pattern in steering, compute time and frame rate, so you can tell which one is happening.</p>
   </div>
@@ -149,7 +162,7 @@ footer { margin-top: 48px; text-align: right; font-size: 12px; color: #999; }
   <div class="info">
     <span class="title">Fourier Neural Operator-Based IoT Device Fingerprinting</span><br>
     Abdelfattah Amamra, <span class="me">Viet K. Nguyen</span>, Adam Cheung, Sarah Acosta, Thuy Linh Pham<br>
-    <span class="small">In preparation</span>
+    <span class="small">Under review</span>
     <p>A federated version that keeps working when clients see traffic at very different resolutions (0.94 accuracy, where a CNN drops to 0.67).</p>
   </div>
 </div>
@@ -173,7 +186,7 @@ footer { margin-top: 48px; text-align: right; font-size: 12px; color: #999; }
 <h2>Mentoring</h2>
 <p>Summer 2026: I made nine research projects for high school students in Cal Poly Pomona's summer program and ran office hours every Friday. The notebooks are on GitHub, for example <a href="https://github.com/VietNguyen705/self-driving-hs">self-driving cars</a>, <a href="https://github.com/VietNguyen705/website-trust-prediction-hs">website trust</a>, <a href="https://github.com/VietNguyen705/dementia-mri-highschool">dementia MRI</a> and <a href="https://github.com/VietNguyen705/plant-disease-highschool">plant disease</a>.</p>
 
-<footer>Last updated Oct 2026</footer>
+<footer>Last updated Nov 2026</footer>
 </div>
 </body>
 </html>
